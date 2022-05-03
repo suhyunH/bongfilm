@@ -1,8 +1,14 @@
+import { Route, Routes } from 'react-router-dom'
+import Main from './pages/Main';
 import './scss/reset.scss'
 
 function App() {
   return (
-    <h1>hello</h1>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+      </Routes>
+    </div>
   );
 }
 
